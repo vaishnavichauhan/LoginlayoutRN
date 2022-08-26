@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
     },
     input: {
         backgroundColor: "#EDF0F8",
-        borderWidth: 1,
         borderRadius: 40,
         overflow: "hidden",
         marginBottom: 15,
