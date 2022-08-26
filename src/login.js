@@ -22,10 +22,13 @@ const LoginScreen = () => (
                 </View>
                 <View style={styles.textpartstwo}>
                     <View style={{ flexDirection: "row" }}>
-                        <Text style={{ padding: 20, fontWeight: "bold" }}>Sign In</Text>
-                        <Text style={{ padding: 20, fontWeight: "bold" }}>Sign In</Text>
+                    <Image source={require('../asset/fb.png')} style={styles.icon} />
+                    <Text style={{ paddingRight:25,fontWeight: "bold" }}>Sign In</Text>
+                    <Image source={require('../asset/g.png')} style={styles.icon} />
+                    <Text style={{ fontWeight: "bold" }}>Sign UP</Text> 
                     </View>
-                    <Text> Don't have an accountn? <Text style={{ fontSize: 18, fontWeight: "bold" }}> Sign Up</Text>
+
+                    <Text style={{marginTop:10}}> Don't have an accountn? <Text style={{ fontSize: 18, fontWeight: "bold" }}> Sign Up</Text>
                     </Text>
                 </View>
             </View>
@@ -36,9 +39,12 @@ const LoginScreen = () => (
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor:"#ffebcd",
+      
     },
     imgpart: {
         flex: 1,
+        
     },
     image: {
         flex: 1,
@@ -46,20 +52,25 @@ const styles = StyleSheet.create({
     },
     textpart: {
         flex: 3,
+        // position:"absolute",
+        // top:50,
+        // width:100,
     },
     textparts: {
         flex: 1,
-        borderTopLeftRadius: 12,
-        borderTopRightRadius: 12,
+      
     },
     textpartsone: {
-        flex: 1,
-        paddingVertical: 30,
-        paddingHorizontal: 15,
+        flex: 2,
+        backgroundColor:"white",
+        paddingTop:80,
+        paddingHorizontal: 20,
         textAlign: "center",
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
     },
     input: {
-        backgroundColor: "#f0f8ff",
+        backgroundColor: "#EDF0F8",
         borderWidth: 1,
         borderRadius: 40,
         overflow: "hidden",
@@ -82,7 +93,13 @@ const styles = StyleSheet.create({
     textpartstwo: {
         flex: 1,
         alignItems: "center",
+        backgroundColor:"white",
     },
+    icon:{
+        height:20,
+        width:20,
+        marginRight:10,
+    }
 })
 
 export default LoginScreen;
